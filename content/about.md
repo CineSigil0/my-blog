@@ -1,8 +1,12 @@
 ---
 title: "关于我"
 description: "Noise & Feedback / 赛博浪人"
+date: 2026-02-06T18:00:00+08:00
+lastmod: 2026-02-06T18:00:00+08:00
 showHero: true
-featureImage: "img/author.jpg"
+heroStyle: "background"
+featureImage: "img/aboutbg.jpg"
+layoutBackgroundBlur: true
 ---
 
 # 在废墟中构建白日梦国度

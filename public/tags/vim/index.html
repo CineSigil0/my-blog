@@ -104,8 +104,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.0b7eed6ec7e300487c2dc5fbb6d7a32936e5399cfa098b9154876c32f317fc992de34c14382d27165959cdf8aff7222844bb5a6f5a8bbeb964ecbb8cd9bf15dc.css"
-    integrity="sha512-C37tbsfjAEh8LcX7ttejKTblOZz6CYuRVIdsMvMX/Jkt40wUOC0nFllZzfiv9yIoRLtab1qLvrlk7LuM2b8V3A==">
+    href="/css/main.bundle.min.71ca485178e1f18f689e86277913fcf6bf9869422857682b80be280411a343371a676321f6d3ca913898b2c4ad9af433a9a922205313600a738aef1d4e619cc4.css"
+    integrity="sha512-ccpIUXjh8Y9onoYneRP89r&#43;YaUIoV2grgL4oBBGjQzcaZ2Mh9tPKkTiYssStmvQzqakiIFMTYApziu8dTmGcxA==">
 
   
   
@@ -239,6 +239,188 @@
   
 
   
+  
+    <div id="iai-loader" style="display: none;">
+    <div class="glint"></div>
+    <div class="slash-beam"></div>
+    <div class="paper-half top"></div>
+    <div class="paper-half bottom"></div>
+    <div id="shrapnel-container"></div>
+</div>
+
+<style>
+    :root {
+        --iai-bg: #050505;
+        --iai-fly-speed: 2.2s;
+        --sakura-pink: #ff80bf;
+        --sakura-glow: #ffb7c5;
+    }
+
+    #iai-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        perspective: 1500px;
+        background: transparent;
+        pointer-events: none;
+    }
+
+     
+    .iai-active-mode #iai-loader {
+        display: block !important;
+        visibility: visible;
+    }
+
+    .iai-done #iai-loader {
+        visibility: hidden;
+        transition: visibility 0s linear 2.5s;
+    }
+
+    .paper-half {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--iai-bg);
+        transition: transform var(--iai-fly-speed) cubic-bezier(0.2, 0.8, 0.2, 1), 
+                    opacity var(--iai-fly-speed) ease;
+        will-change: transform, opacity;
+        pointer-events: auto;
+    }
+
+    .top {
+        clip-path: polygon(0 0, 100% 0, 100% 62%, 90% 58%, 80% 61%, 70% 57%, 60% 60%, 50% 56%, 40% 59%, 30% 55%, 20% 58%, 10% 54%, 0 57%);
+        transform-origin: left top;
+    }
+
+    .bottom {
+        clip-path: polygon(0 57%, 10% 54%, 20% 58%, 30% 55%, 40% 59%, 50% 56%, 60% 60%, 70% 57%, 80% 61%, 90% 58%, 100% 62%, 100% 100%, 0 100%);
+        transform-origin: right bottom;
+    }
+
+    .glint {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        background: white;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 20px 5px white, 0 0 10px var(--sakura-pink);
+        z-index: 100001;
+        animation: iai-pulse 1s infinite alternate;
+    }
+
+    @keyframes iai-pulse {
+        from { opacity: 0.5; transform: translate(-50%, -50%) scale(0.8); }
+        to { opacity: 1; transform: translate(-50%, -50%) scale(1.3); }
+    }
+
+    .slash-beam {
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        width: 200%;
+        height: 8px;
+        background: white;
+        box-shadow: 0 0 20px 2px white, 0 0 40px 10px var(--sakura-pink), 0 0 60px 20px rgba(255, 128, 191, 0.4);
+        transform: translateY(-50%) rotate(-15deg) scaleX(0);
+        z-index: 100002;
+        opacity: 0;
+        filter: blur(0.5px);
+    }
+
+    .iai-active .glint { display: none; }
+    
+    .iai-active .slash-beam {
+        animation: iai-strike 0.35s ease-out forwards;
+    }
+
+    @keyframes iai-strike {
+        0% { transform: translateY(-50%) rotate(-15deg) scaleX(0); opacity: 1; }
+        30% { transform: translateY(-50%) rotate(-15deg) scaleX(1); opacity: 1; }
+        100% { transform: translateY(-50%) rotate(-15deg) scaleX(1.8); opacity: 0; }
+    }
+
+    .iai-active .paper-half.top {
+        transform: translate3d(-15%, -110%, 400px) rotateX(25deg) rotateZ(-15deg) rotateY(-10deg);
+        opacity: 0;
+    }
+
+    .iai-active .paper-half.bottom {
+        transform: translate3d(15%, 110%, 400px) rotateX(-25deg) rotateZ(-15deg) rotateY(10deg);
+        opacity: 0;
+    }
+
+    .shrapnel {
+        position: absolute;
+        background: #1a1a1a;
+        width: 15px;
+        height: 15px;
+        top: 55%;
+        left: 50%;
+        opacity: 0;
+        z-index: 99999;
+    }
+
+    .iai-active .shrapnel {
+        animation: iai-explode 2s forwards 0.1s;
+    }
+
+    @keyframes iai-explode {
+        0% { opacity: 1; transform: translate(0, 0) rotate(0deg); }
+        100% { opacity: 0; transform: var(--tx) var(--ty) rotate(var(--tr)); }
+    }
+</style>
+
+<script>
+    (function() {
+        
+        const hasPlayed = sessionStorage.getItem('iai_played');
+
+        if (!hasPlayed) {
+            
+            document.documentElement.classList.add('iai-active-mode');
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const container = document.getElementById('shrapnel-container');
+                if (container) {
+                    for(let i=0; i<16; i++) {
+                        const s = document.createElement('div');
+                        s.className = 'shrapnel';
+                        s.style.setProperty('--tx', `translateX(${(Math.random()-0.5)*1200}px)`);
+                        s.style.setProperty('--ty', `translateY(${(Math.random()-0.5)*1200}px)`);
+                        s.style.setProperty('--tr', `${Math.random()*720}deg`);
+                        s.style.width = Math.random()*30+10+'px';
+                        s.style.height = Math.random()*10+4+'px';
+                        s.style.clipPath = `polygon(${Math.random()*20}% 0%, 100% 0%, ${Math.random()*100}% 100%, 0% ${Math.random()*100}%)`;
+                        container.appendChild(s);
+                    }
+                }
+            });
+
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    document.documentElement.classList.add('iai-active');
+                    
+                    sessionStorage.setItem('iai_played', 'true');
+                    setTimeout(function() {
+                        document.documentElement.classList.add('iai-done');
+                        
+                        document.documentElement.classList.remove('iai-active-mode');
+                    }, 2500);
+                }, 800);
+            });
+        } else {
+            
+            document.getElementById('iai-loader').style.display = 'none';
+        }
+    })();
+</script>
+
   
 
   
@@ -741,7 +923,7 @@
   
     <div class="flex-none relative overflow-hidden  thumbnail">
       <img
-        src="/posts/the-zen-of-vim/feature_hu_c9f71b47d526d342.jpg"
+        src="/posts/the-zen-of-vim/feature_hu_d439ff589b556561.jpg"
         role="presentation"
         loading="lazy"
         decoding="async"
@@ -756,7 +938,7 @@
         
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
         <h2>
-          Vim 禅修：从“肌肉记忆”到“思维流”的跨越
+          我的 Neovim 配置实录
           
         </h2>
       </a>
@@ -810,7 +992,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-02-06T18:00:00&#43;08:00">2026年2月6日</time><span class="px-2 text-primary-500">&middot;</span><span>884 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+      <time datetime="2026-02-06T18:00:00&#43;08:00">2026年2月6日</time><span class="px-2 text-primary-500">&middot;</span><span>2836 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span>
     
 
     

@@ -1,46 +1,50 @@
-/* 极强优先级的闪烁歌词样式 */
+/* 1. 【精准锁定】仅左上角站点标题艺术化 */
+/* 通过排除包含 .bf-icon-color-hover (菜单项特有类) 的链接来保护菜单 */
+.main-menu a:first-child:not(.bf-icon-color-hover) {
+  font-family: "Georgia", "Apple Chancery", "Palatino", serif !important;
+  font-style: italic !important;
+  font-size: 1.8rem !important;
+  letter-spacing: -0.5px !important;
+  color: #00d2ff !important;
+  text-shadow: 0 0 8px rgba(0, 210, 255, 0.6) !important;
+  margin-right: 15px !important;
+}
+
+/* 确保导航菜单（首页、文章、话题、关于）保持正常样式 */
+.main-menu .bf-icon-color-hover span {
+  font-family: inherit !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  text-shadow: none !important;
+  color: inherit !important;
+}
+
+/* 2. 首页中央标题 (Cigar) - 保持默认 */
+
+/* 3. 打字机歌词样式 */
 h1.glitter-lyric, 
 div.glitter-lyric {
   font-family: "Georgia", "Times New Roman", serif !important;
   font-style: italic !important;
-  font-size: 1.5rem !important; /* 减小字号，原本 2.5rem 太大了 */
+  font-size: 1.5rem !important;
   line-height: 1.5 !important;
   text-align: center !important;
   margin: 20px auto !important;
-  
-  /* 文字颜色：白色基础 */
   color: #ffffff !important;
-  
-  /* 核心：霓虹发光效果 */
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(255, 0, 222, 0.8), /* 霓虹紫 */
+    0 0 20px rgba(255, 0, 222, 0.8),
     0 0 30px rgba(255, 0, 222, 0.6),
-    0 0 40px rgba(0, 210, 255, 0.8) !important; /* 霓虹蓝 */
-
-  /* 呼吸动画 */
+    0 0 40px rgba(0, 210, 255, 0.8) !important;
   animation: lyric-glow 3s ease-in-out infinite alternate !important;
 }
 
 @keyframes lyric-glow {
-  0% {
-    text-shadow: 
-      0 0 10px #fff,
-      0 0 20px #ff00de,
-      0 0 30px #ff00de;
-    opacity: 0.9;
-  }
-  100% {
-    text-shadow: 
-      0 0 20px #fff,
-      0 0 40px #00d2ff,
-      0 0 60px #00d2ff;
-    opacity: 1;
-    transform: translateY(-2px); /* 轻微上浮感 */
-  }
+  0% { text-shadow: 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de; opacity: 0.9; }
+  100% { text-shadow: 0 0 20px #fff, 0 0 40px #00d2ff, 0 0 60px #00d2ff; opacity: 1; transform: translateY(-2px); }
 }
 
-/* 恢复并美化打字机光标 */
+/* 4. 打字机光标 */
 .glitter-lyric .ti-cursor {
   color: #ff00de !important;
   text-shadow: 0 0 10px #ff00de, 0 0 20px #00d2ff !important;
