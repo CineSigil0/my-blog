@@ -9,7 +9,36 @@
 # By default the menu is ordered alphabetically. This can be
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
+# === 头部主菜单 ===
+[[main]]
+  name = "首页"
+  pageRef = "/" # 回到首页
+  weight = 10
+  pre = "home" # Blowfish 内置图标
 
+[[main]]
+  name = "文章"
+  pageRef = "posts" # 自动关联 content/posts
+  weight = 20
+  pre = "pen-tool"
+
+[[main]]
+  name = "话题"
+  pageRef = "tags" # 对应教程里的 taxonomy
+  weight = 30
+  pre = "tag"
+
+[[main]]
+  name = "关于"
+  pageRef = "about" # 需要创建 content/about.md
+  weight = 40
+  pre = "user"
+
+# === 底部菜单 ===
+[[footer]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 10
 #[[main]]
 #  name = "Blog"
 #  pageRef = "posts"
