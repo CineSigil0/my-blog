@@ -3,10 +3,10 @@ h1.glitter-lyric,
 div.glitter-lyric {
   font-family: "Georgia", "Times New Roman", serif !important;
   font-style: italic !important;
-  font-size: 2.5rem !important; /* 调大字号 */
+  font-size: 1.5rem !important; /* 减小字号，原本 2.5rem 太大了 */
   line-height: 1.5 !important;
   text-align: center !important;
-  margin: 40px auto !important;
+  margin: 20px auto !important;
   
   /* 文字颜色：白色基础 */
   color: #ffffff !important;
@@ -40,10 +40,10 @@ div.glitter-lyric {
   }
 }
 
-/* 彻底干掉打字机光标 */
-.glitter-lyric .ti-cursor,
-.ti-cursor {
-  display: none !important;
-  opacity: 0 !important;
-  width: 0 !important;
+/* 恢复并美化打字机光标 */
+.glitter-lyric .ti-cursor {
+  color: #ff00de !important;
+  text-shadow: 0 0 10px #ff00de, 0 0 20px #00d2ff !important;
+  font-weight: bold !important;
+  margin-left: 2px !important;
 }

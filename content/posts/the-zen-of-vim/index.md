@@ -1,12 +1,13 @@
 +++
 date = '2026-02-06T18:00:00+08:00'
 draft = false
-title = 'Vim 禅修：从“肌肉记忆”到“思维流”的跨越'
+title = '我的Neovim配置'
 summary = '为什么在 2026 年，我依然建议你放下鼠标，回到键盘的 Home Row？这不关乎效率，而关乎如何让编辑器跟上你的脑回路。'
 tags = ["Vim", "生产力", "开发者工具"]
 categories = ["随笔"]
 featureImage = "feature.jpg"
 showHero = true
+
 +++
 
 ---
