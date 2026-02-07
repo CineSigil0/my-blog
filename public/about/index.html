@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59760&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64517&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="zh-cn">
@@ -26,7 +26,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:59760/about/">
+  <link rel="canonical" href="http://localhost:64517/about/">
   
 
   
@@ -48,7 +48,7 @@
   
 
   
-  <meta property="og:url" content="http://localhost:59760/about/">
+  <meta property="og:url" content="http://localhost:64517/about/">
   <meta property="og:site_name" content="Daydream Nation">
   <meta property="og:title" content="关于我">
   <meta property="og:description" content="Noise &amp; Feedback / 赛博浪人">
@@ -107,8 +107,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.06ae1f7855fe6ec5a0d7d7561394c46cd50716649f842ba7798de315a78e97731c053e7eaaf582c3023b0dbc6f5cff14d8e131c6f18837fd47bda87971c10f2c.css"
-    integrity="sha512-Bq4feFX&#43;bsWg19dWE5TEbNUHFmSfhCuneY3jFaeOl3McBT5&#43;qvWCwwI7DbxvXP8U2OExxvGIN/1Hvah5ccEPLA==">
+    href="/css/main.bundle.min.1ff5ea7eb1a04a7229b05de7ceac6b27b9ae9e7c091352c0a5d42d3ae5abedafd3514b97d9e5b3fa272f4799c851ed08d95109c59f9afce52dcc58076df1350e.css"
+    integrity="sha512-H/XqfrGgSnIpsF3nzqxrJ7munnwJE1LApdQtOuWr7a/TUUuX2eWz&#43;icvR5nIUe0I2VEJxZ&#43;a/OUtzFgHbfE1Dg==">
 
   
   
@@ -218,7 +218,7 @@
     "headline": "关于我",
     "description": "Noise \u0026 Feedback \/ 赛博浪人",
     "inLanguage": "zh-cn",
-    "url" : "http://localhost:59760/about/",
+    "url" : "http://localhost:64517/about/",
     "author" : {
       "@type": "Person",
       "name": "Cigar"
@@ -243,190 +243,26 @@
 
   
   
-    <div id="iai-loader" style="display: none;">
-    <div class="glint"></div>
-    <div class="slash-beam"></div>
-    <div class="paper-half top"></div>
-    <div class="paper-half bottom"></div>
-    <div id="shrapnel-container"></div>
-</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700;800&family=Orbitron:wght@500;700;800&display=swap"
+  rel="stylesheet">
 
-<style>
-    :root {
-        --iai-bg: #050505;
-        --iai-fly-speed: 2.2s;
-        --sakura-pink: #ff80bf;
-        --sakura-glow: #ffb7c5;
-    }
+  
 
-    #iai-loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 99999;
-        perspective: 1500px;
-        background: transparent;
-        pointer-events: none;
-    }
-
-     
-    .iai-active-mode #iai-loader {
-        display: block !important;
-        visibility: visible;
-    }
-
-    .iai-done #iai-loader {
-        visibility: hidden;
-        transition: visibility 0s linear 2.5s;
-    }
-
-    .paper-half {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: var(--iai-bg);
-        transition: transform var(--iai-fly-speed) cubic-bezier(0.2, 0.8, 0.2, 1), 
-                    opacity var(--iai-fly-speed) ease;
-        will-change: transform, opacity;
-        pointer-events: auto;
-    }
-
-    .top {
-        clip-path: polygon(0 0, 100% 0, 100% 62%, 90% 58%, 80% 61%, 70% 57%, 60% 60%, 50% 56%, 40% 59%, 30% 55%, 20% 58%, 10% 54%, 0 57%);
-        transform-origin: left top;
-    }
-
-    .bottom {
-        clip-path: polygon(0 57%, 10% 54%, 20% 58%, 30% 55%, 40% 59%, 50% 56%, 60% 60%, 70% 57%, 80% 61%, 90% 58%, 100% 62%, 100% 100%, 0 100%);
-        transform-origin: right bottom;
-    }
-
-    .glint {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 6px;
-        height: 6px;
-        background: white;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 0 20px 5px white, 0 0 10px var(--sakura-pink);
-        z-index: 100001;
-        animation: iai-pulse 1s infinite alternate;
-    }
-
-    @keyframes iai-pulse {
-        from { opacity: 0.5; transform: translate(-50%, -50%) scale(0.8); }
-        to { opacity: 1; transform: translate(-50%, -50%) scale(1.3); }
-    }
-
-    .slash-beam {
-        position: absolute;
-        top: 50%;
-        left: -50%;
-        width: 200%;
-        height: 8px;
-        background: white;
-        box-shadow: 0 0 20px 2px white, 0 0 40px 10px var(--sakura-pink), 0 0 60px 20px rgba(255, 128, 191, 0.4);
-        transform: translateY(-50%) rotate(-15deg) scaleX(0);
-        z-index: 100002;
-        opacity: 0;
-        filter: blur(0.5px);
-    }
-
-    .iai-active .glint { display: none; }
+  
+  
     
-    .iai-active .slash-beam {
-        animation: iai-strike 0.35s ease-out forwards;
-    }
-
-    @keyframes iai-strike {
-        0% { transform: translateY(-50%) rotate(-15deg) scaleX(0); opacity: 1; }
-        30% { transform: translateY(-50%) rotate(-15deg) scaleX(1); opacity: 1; }
-        100% { transform: translateY(-50%) rotate(-15deg) scaleX(1.8); opacity: 0; }
-    }
-
-    .iai-active .paper-half.top {
-        transform: translate3d(-15%, -110%, 400px) rotateX(25deg) rotateZ(-15deg) rotateY(-10deg);
-        opacity: 0;
-    }
-
-    .iai-active .paper-half.bottom {
-        transform: translate3d(15%, 110%, 400px) rotateX(-25deg) rotateZ(-15deg) rotateY(10deg);
-        opacity: 0;
-    }
-
-    .shrapnel {
-        position: absolute;
-        background: #1a1a1a;
-        width: 15px;
-        height: 15px;
-        top: 55%;
-        left: 50%;
-        opacity: 0;
-        z-index: 99999;
-    }
-
-    .iai-active .shrapnel {
-        animation: iai-explode 2s forwards 0.1s;
-    }
-
-    @keyframes iai-explode {
-        0% { opacity: 1; transform: translate(0, 0) rotate(0deg); }
-        100% { opacity: 0; transform: var(--tx) var(--ty) rotate(var(--tr)); }
-    }
-</style>
-
 <script>
-    (function() {
-        
-        const hasPlayed = sessionStorage.getItem('iai_played');
-
-        if (!hasPlayed) {
-            
-            document.documentElement.classList.add('iai-active-mode');
-
-            document.addEventListener('DOMContentLoaded', function() {
-                const container = document.getElementById('shrapnel-container');
-                if (container) {
-                    for(let i=0; i<16; i++) {
-                        const s = document.createElement('div');
-                        s.className = 'shrapnel';
-                        s.style.setProperty('--tx', `translateX(${(Math.random()-0.5)*1200}px)`);
-                        s.style.setProperty('--ty', `translateY(${(Math.random()-0.5)*1200}px)`);
-                        s.style.setProperty('--tr', `${Math.random()*720}deg`);
-                        s.style.width = Math.random()*30+10+'px';
-                        s.style.height = Math.random()*10+4+'px';
-                        s.style.clipPath = `polygon(${Math.random()*20}% 0%, 100% 0%, ${Math.random()*100}% 100%, 0% ${Math.random()*100}%)`;
-                        container.appendChild(s);
-                    }
-                }
-            });
-
-            window.addEventListener('load', function() {
-                setTimeout(function() {
-                    document.documentElement.classList.add('iai-active');
-                    
-                    sessionStorage.setItem('iai_played', 'true');
-                    setTimeout(function() {
-                        document.documentElement.classList.add('iai-done');
-                        
-                        document.documentElement.classList.remove('iai-active-mode');
-                    }, 2500);
-                }, 800);
-            });
-        } else {
-            
-            document.getElementById('iai-loader').style.display = 'none';
-        }
-    })();
+  (function () {
+    var path = window.location.pathname || "/";
+    if (path === "/tags/" || path.indexOf("/tags/") === 0) {
+      document.documentElement.classList.add("page-tags");
+    }
+  })();
 </script>
 
-  
-
-  
   
 
   
@@ -1456,11 +1292,15 @@
     integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
   
   
+    <script defer src="/js/cyber-blog.js"></script>
+<script defer src="/js/welcome-gate.js"></script>
+
+  
 </footer>
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="http://localhost:59760/">
+  data-url="http://localhost:64517/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">

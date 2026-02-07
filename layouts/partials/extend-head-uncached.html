@@ -1,0 +1,39 @@
+{{ if .IsHome }}
+  <style>
+    html.welcome-gate-pending .relative.flex.flex-col.grow,
+    html.welcome-gate-pending #site-footer {
+      opacity: 0 !important;
+      transform: translateY(18px);
+    }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search || "");
+      var welcome = (params.get("welcome") || "").toLowerCase();
+      var shouldOpen = welcome === "1" || welcome === "true" || welcome === "yes";
+      var shouldSkip = welcome === "0" || welcome === "false" || welcome === "no" || welcome === "off";
+
+      if (!shouldOpen && !shouldSkip) {
+        try {
+          var key = "welcome-gate-shown";
+          if (!window.sessionStorage.getItem(key)) {
+            shouldOpen = true;
+            window.sessionStorage.setItem(key, "1");
+          }
+        } catch (error) {}
+      }
+
+      if (shouldOpen && !shouldSkip) {
+        document.documentElement.classList.add("welcome-gate-pending");
+      }
+    })();
+  </script>
+{{ end }}
+<script>
+  (function () {
+    var path = window.location.pathname || "/";
+    if (path === "/tags/" || path.indexOf("/tags/") === 0) {
+      document.documentElement.classList.add("page-tags");
+    }
+  })();
+</script>

@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Daydream Nation</title>
-    <link>http://localhost:59760/categories/</link>
+    <link>http://localhost:64517/categories/</link>
     <description>Recent content in Categories on Daydream Nation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>2013189697zsj@gmail.com (Cigar)</managingEditor>
     <webMaster>2013189697zsj@gmail.com (Cigar)</webMaster>
     <copyright>© 2026 Cigar</copyright>
-    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:59760/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:64517/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>随笔</title>
-      <link>http://localhost:59760/categories/%E9%9A%8F%E7%AC%94/</link>
+      <link>http://localhost:64517/categories/%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:59760/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>http://localhost:64517/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>学习笔记</title>
-      <link>http://localhost:59760/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:64517/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:59760/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:64517/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>技术详解</title>
-      <link>http://localhost:59760/categories/%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/</link>
+      <link>http://localhost:64517/categories/%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Fri, 06 Feb 2026 16:23:38 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:59760/categories/%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>http://localhost:64517/categories/%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/</guid>
       <description></description>
       
     </item>
