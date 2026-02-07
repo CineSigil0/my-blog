@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记 on Daydream Nation</title>
+    <link>http://localhost:59760/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 学习笔记 on Daydream Nation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>2013189697zsj@gmail.com (Cigar)</managingEditor>
+    <webMaster>2013189697zsj@gmail.com (Cigar)</webMaster>
+    <copyright>© 2026 Cigar</copyright>
+    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:59760/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neovim Lua 官方指南深度研读</title>
+      <link>http://localhost:59760/posts/learn-lua-guide/</link>
+      <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
+      <author>2013189697zsj@gmail.com (Cigar)</author>
+      <guid>http://localhost:59760/posts/learn-lua-guide/</guid>
+      <description>从习惯了多年的 Vimscript 转向 Lua，就像是从操作老式发电机转向自动化工厂。本文作为一份生存手册，带你深入理解 Neovim 的三层 API 架构、Lua 执行路径、模块化工程实践以及混合编程的最佳范式。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

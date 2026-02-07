@@ -2,33 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>文章 on Daydream Nation</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:59760/posts/</link>
     <description>Recent content in 文章 on Daydream Nation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>2013189697zsj@gmail.com (Cigar)</managingEditor>
     <webMaster>2013189697zsj@gmail.com (Cigar)</webMaster>
     <copyright>© 2026 Cigar</copyright>
-    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:59760/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neovim Lua 官方指南深度研读</title>
+      <link>http://localhost:59760/posts/learn-lua-guide/</link>
+      <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
+      <author>2013189697zsj@gmail.com (Cigar)</author>
+      <guid>http://localhost:59760/posts/learn-lua-guide/</guid>
+      <description>从习惯了多年的 Vimscript 转向 Lua，就像是从操作老式发电机转向自动化工厂。本文作为一份生存手册，带你深入理解 Neovim 的三层 API 架构、Lua 执行路径、模块化工程实践以及混合编程的最佳范式。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:59760/posts/learn-lua-guide/feature.jpg" />
+    </item>
     
     <item>
       <title>我的 Neovim 配置实录</title>
-      <link>http://localhost:1313/posts/the-zen-of-vim/</link>
+      <link>http://localhost:59760/posts/the-zen-of-vim/</link>
       <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:1313/posts/the-zen-of-vim/</guid>
+      <guid>http://localhost:59760/posts/the-zen-of-vim/</guid>
       <description>为什么在 2026 年，我依然建议你放下鼠标，回到键盘的 Home Row？这不关乎效率，而关乎如何让编辑器跟上你的脑回路。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/the-zen-of-vim/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:59760/posts/the-zen-of-vim/feature.jpg" />
     </item>
     
     <item>
       <title>透视内存模型：别再让局部变量在栈里“借尸还魂”</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:59760/posts/my-first-post/</link>
       <pubDate>Fri, 06 Feb 2026 16:23:38 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:59760/posts/my-first-post/</guid>
       <description>深入探讨 C 语言中栈与堆的物理本质，解析局部变量的生存悖论与手动内存管理的底层逻辑。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-first-post/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:59760/posts/my-first-post/feature.jpg" />
     </item>
     
   </channel>

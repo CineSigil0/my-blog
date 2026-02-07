@@ -22,7 +22,7 @@
 /* 2. 首页中央标题 (Cigar) - 保持默认 */
 
 /* 3. 打字机歌词样式 */
-h1.glitter-lyric, 
+h1.glitter-lyric,
 div.glitter-lyric {
   font-family: "Georgia", "Times New Roman", serif !important;
   font-style: italic !important;
@@ -31,7 +31,7 @@ div.glitter-lyric {
   text-align: center !important;
   margin: 20px auto !important;
   color: #ffffff !important;
-  text-shadow: 
+  text-shadow:
     0 0 10px rgba(255, 255, 255, 0.8),
     0 0 20px rgba(255, 0, 222, 0.8),
     0 0 30px rgba(255, 0, 222, 0.6),
@@ -40,8 +40,16 @@ div.glitter-lyric {
 }
 
 @keyframes lyric-glow {
-  0% { text-shadow: 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de; opacity: 0.9; }
-  100% { text-shadow: 0 0 20px #fff, 0 0 40px #00d2ff, 0 0 60px #00d2ff; opacity: 1; transform: translateY(-2px); }
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de;
+    opacity: 0.9;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 40px #00d2ff, 0 0 60px #00d2ff;
+    opacity: 1;
+    transform: translateY(-2px);
+  }
 }
 
 /* 4. 打字机光标 */
@@ -50,4 +58,55 @@ div.glitter-lyric {
   text-shadow: 0 0 10px #ff00de, 0 0 20px #00d2ff !important;
   font-weight: bold !important;
   margin-left: 2px !important;
+}
+
+/* ========== 移动端响应式布局 ========== */
+
+/* 平板和手机 (≤768px) */
+@media screen and (max-width: 768px) {
+
+  /* 站点标题缩小 */
+  .main-menu a:first-child:not(.bf-icon-color-hover) {
+    font-size: 1.4rem !important;
+    margin-right: 8px !important;
+  }
+
+  /* 歌词文字调整 */
+  h1.glitter-lyric,
+  div.glitter-lyric {
+    font-size: 1.2rem !important;
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.7),
+      0 0 12px rgba(255, 0, 222, 0.6),
+      0 0 18px rgba(0, 210, 255, 0.5) !important;
+  }
+
+  /* 防止水平溢出 */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* 小屏手机 (≤480px) */
+@media screen and (max-width: 480px) {
+
+  /* 站点标题进一步缩小 */
+  .main-menu a:first-child:not(.bf-icon-color-hover) {
+    font-size: 1.15rem !important;
+    letter-spacing: -0.3px !important;
+    margin-right: 4px !important;
+  }
+
+  /* 歌词文字进一步调整 */
+  h1.glitter-lyric,
+  div.glitter-lyric {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    padding: 0 10px !important;
+  }
+
+  /* 打字机光标调整 */
+  .glitter-lyric .ti-cursor {
+    text-shadow: 0 0 6px #ff00de, 0 0 12px #00d2ff !important;
+  }
 }

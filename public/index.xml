@@ -12,6 +12,16 @@
     <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Neovim Lua 官方指南深度研读</title>
+      <link>http://localhost:1313/posts/learn-lua-guide/</link>
+      <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
+      <author>2013189697zsj@gmail.com (Cigar)</author>
+      <guid>http://localhost:1313/posts/learn-lua-guide/</guid>
+      <description>从习惯了多年的 Vimscript 转向 Lua，就像是从操作老式发电机转向自动化工厂。本文作为一份生存手册，带你深入理解 Neovim 的三层 API 架构、Lua 执行路径、模块化工程实践以及混合编程的最佳范式。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/learn-lua-guide/feature.jpg" />
+    </item>
+    
+    <item>
       <title>关于我</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>

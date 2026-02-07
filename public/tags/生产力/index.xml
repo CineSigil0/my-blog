@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生产力 on Daydream Nation</title>
-    <link>http://localhost:1313/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/</link>
+    <link>http://localhost:59760/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/</link>
     <description>Recent content in 生产力 on Daydream Nation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>2013189697zsj@gmail.com (Cigar)</managingEditor>
     <webMaster>2013189697zsj@gmail.com (Cigar)</webMaster>
     <copyright>© 2026 Cigar</copyright>
-    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Feb 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:59760/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>我的 Neovim 配置实录</title>
-      <link>http://localhost:1313/posts/the-zen-of-vim/</link>
+      <link>http://localhost:59760/posts/the-zen-of-vim/</link>
       <pubDate>Fri, 06 Feb 2026 18:00:00 +0800</pubDate>
       <author>2013189697zsj@gmail.com (Cigar)</author>
-      <guid>http://localhost:1313/posts/the-zen-of-vim/</guid>
+      <guid>http://localhost:59760/posts/the-zen-of-vim/</guid>
       <description>为什么在 2026 年，我依然建议你放下鼠标，回到键盘的 Home Row？这不关乎效率，而关乎如何让编辑器跟上你的脑回路。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/the-zen-of-vim/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:59760/posts/the-zen-of-vim/feature.jpg" />
     </item>
     
   </channel>

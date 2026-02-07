@@ -3,31 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:59760/</loc>
     <lastmod>2026-02-06T18:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:59760/posts/learn-lua-guide/</loc>
     <lastmod>2026-02-06T18:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:59760/about/</loc>
     <lastmod>2026-02-06T18:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/the-zen-of-vim/</loc>
+    <loc>http://localhost:59760/posts/</loc>
     <lastmod>2026-02-06T18:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
+    <loc>http://localhost:59760/posts/the-zen-of-vim/</loc>
+    <lastmod>2026-02-06T18:00:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:59760/posts/my-first-post/</loc>
     <lastmod>2026-02-06T16:23:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
